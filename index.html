@@ -1,518 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Bilyeu - CV</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-        }
-        .gradient-header {
-            background: linear-gradient(90deg, #3182ce, #63b3ed);
-        }
-        pre[class*="language-"] {
-            background: #252526 !important; 
-            color: #272626 !important;
-            border-radius: 0.5rem;
-            padding: 0.5rem !important;
-            display: none;
-            margin-top: 10px;
-            max-height: 250px; 
-            overflow-y: auto; 
-            font-size: 0.8rem;
-            line-height: 1.3; 
-            word-wrap: normal;
-            white-space: pre; 
-            overflow-x: scroll;
-            width: 100%;
-            text-shadow: none; 
-            
-        }
-        
-        pre[class*="language-"] code {
-            color: #9CDCFE;
-            background: none;
-            font-family: 'Cascadia Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-            text-align: left;
-            white-space: pre;
-            word-spacing: normal;
-            word-break: normal;
-            word-wrap: normal;
-            line-height: 1.5;
-            tab-size: 4;
-            hyphens: none;
-    
-
-            
-        }
-        .code-button {
-            background-color: #3182ce;
-            color: rgb(255, 250, 250);
-            padding: 8px 16px;
-            border-radius: 0.375rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            margin-bottom: 10px;
-        }
-        .code-button:hover {
-            background-color: #2c5282;
-        }
-       
-        .token.builtin { color: #569CD6 !important; }
-        .token.comment { color: #6A9955 !important; }
-        .token.operator {color: white !important; }
-        .token.punctuation {color: rgb(233, 162, 8) !important; }
-        .token.string { color: #CE9178 !important; }
-        .token.number { color: #B5CEA8 !important; }
-        .token.keyword { color: #569CD6 !important; }
-        .token.boolean { color: #569CD6 !important; }
-        .token.function { color: #e0ce2b !important; }
-        .token.class-name { color: #4EC9B0 !important; }
-        .token.tag { color: #569CD6 !important; }
-        .token.attr-name { color: #9CDCFE !important; }
-        
-        .token {
-            -webkit-text-stroke: 0 !important;
-            border: none !important;
-            box-shadow: none !important;
-            font-weight: normal !important;
-        }
-
-
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Bilyeu - Resume</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+    body { font-family: 'Roboto', sans-serif; background-color: #f4f4f4; }
+    .gradient-header { background: linear-gradient(90deg, #1e3a8a, #3b82f6); }
+  </style>
 </head>
-<body class="bg-gray-100">  
-    <div class="container mx-auto max-w-4xl bg-white margin-left-6 shadow-lg my-8 rounded-lg overflow-hidden page-1">
-        <div class="gradient-header text-white p-6">
-            <h1 class="text-4xl font-bold">Andrew Bilyeu</h1>
-            <p class="text-xl">Computer Science Enthusiast</p>
-        </div>
-                <section class="mb-6">
-                    <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4 ml-8 mr-8"><br>Technical Skills</h2>
-                    <div class="grid md:grid-cols-3 gap-2 ml-8 mr-8">
-                        <div>
-                            <h3 class="font-bold">Programming Languages</h3>
-                            <ul class="text-gray-700">
-                                <li>Python (3 years)</li>
-                                <li>Java (2.5 years)</li>
-                                <li>MySQL (1 year)</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-bold">Technical Skills</h3>
-                            <ul class="text-gray-700">
-                                <li>Computer Repair</li>
-                                <li>Robot Construction</li>
-                                <li>Software Development</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-bold">Other Skills</h3>
-                            <ul class="text-gray-700">
-                                <li>Problem Solving</li>
-                                <li>Leadership</li>
-                                <li>Community Engagement</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="mb-6 ml-8 mr-8">
-                    <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4 ">Projects</h2>
-                    
-                    <div class="mb-6">
-                        <h3 class="text-xl font-bold mb-2">Canvas File Scraper</h3>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <div>
-                                <p class="text-gray-700 mb-4">A tool I developed which extracts files from a chosen course on Canvas and downloads them to a specified folder on your computer.</p>
-                                <h4 class="font-bold">Key Features:</h4>
-                                <ul class="list-disc list-inside text-gray-700">
-                                    <li>Automated file download (to a point)</li>
-                                    <li>It supports multiple file types</li>
-                                    <li>Easily customizable</li>
-                                    <li>Error handling<br></li>
-                                </ul>
-
-                                <br><button onclick="toggleCode('canvas-file-scraper' , event)" class="code-button mt-0">Show Canvas File Scraper Code</button>
-                            </div>
-                            <div>
-                                <pre id="canvas-file-scraper" class="language-python"><code class="language-python">import argparse
-import os
-import re
-
-from pathvalidate import sanitize_filename
-from canvasapi import Canvas
-from canvasapi.course import Course
-from canvasapi.exceptions import Unauthorized, ResourceDoesNotExist, Forbidden
-from canvasapi.file import File
-from canvasapi.module import Module, ModuleItem
-
-
-def extract_files(text):
-    text_search = re.findall("/files/(\\d+)", text, re.IGNORECASE)
-    groups = set(text_search)
-    return groups
-
-def get_course_files(course):
-    modules = course.get_modules()
-
-    files_downloaded = set() #File downloaded check
-
-    for module in modules:
-        module: Module = module
-        module_items = module.get_module_items()
-        for item in module_items:
-            item: ModuleItem = item
-            
-            try:
-                path = f"{output}/" \
-                    f"{sanitize_filename(course.name)}/" \
-                    f"{sanitize_filename(module.name)}/"
-            except Exception as e:
-                print(e)
-                continue
-            if not os.path.exists(path):
-                os.makedirs(path)
-
-            item_type = item.type
-            print(f"{course.name} - "
-                  f"{module.name} - "
-                  f"{item.title} ({item_type})")
-
-            if item_type == "File":
-                file = canvas.get_file(item.content_id)
-                files_downloaded.add(item.content_id)
-                file.download(path + sanitize_filename(file.filename))
-            elif item_type == "Page":
-                page = course.get_page(item.page_url)
-                with open(path + sanitize_filename(item.title) + ".html", "w", encoding="utf-8") as f:
-                    f.write(page.body or "")
-                files = extract_files(page.body or "")
-                for file_id in files:
-                    if file_id in files_downloaded:
-                        continue
-                    try:
-                        file = course.get_file(file_id)
-                        files_downloaded.add(file_id)
-                        file.download(path + sanitize_filename(file.filename))
-                    except ResourceDoesNotExist:
-                        pass
-            elif item_type == "ExternalUrl":
-                url = item.external_url
-                with open(path + sanitize_filename(item.title) + ".url", "w") as f:
-                    f.write("[InternetShortcut]\n")
-                    f.write("URL=" + url)
-            elif item_type == "Assignment":
-                assignment = course.get_assignment(item.content_id)
-                with open(path + sanitize_filename(item.title) + ".html", "w", encoding="utf-8") as f:
-                    f.write(assignment.description or "")
-                files = extract_files(assignment.description or "")
-                for file_id in files:
-                    if file_id in files_downloaded:
-                        continue
-                    try:
-                        file = course.get_file(file_id)
-                        files_downloaded.add(file_id)
-                        file.download(path + sanitize_filename(file.filename))
-                    except ResourceDoesNotExist:
-                        pass
-                    except Unauthorized:
-                        pass
-                    except Forbidden:
-                        pass
-
-    try:
-        files = course.get_files()
-        for file in files:
-            file: File = file
-            if not file.id in files_downloaded:
-                print(f"{course.name} - {file.filename}")
-                path = f"{output}/{sanitize_filename(course.name)}/" \
-                    f"{sanitize_filename(file.filename)}"
-                file.download(path)
-    except Unauthorized:
-        pass
-    except Forbidden:
-        pass
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--url", required=True, help="canvas link")
-    parser.add_argument("--token", required=True, help="Canvas API token")
-    parser.add_argument("--courses", default="all", help="course ID")
-    parser.add_argument("--output", required=True, help=r"C:\\Users\\User\\Desktop\\Canvas assignments")
-    args = parser.parse_args()
-    parser.parse_args(args.url, args.token, args.courses, args.output)
-
-
-    output = args.output.strip('/') + "/"
-    canvas = Canvas(args.url, args.token)
-
-    if args.courses != "all":
-        args.courses = "all"
-        courses = canvas.get_courses
-
-
-    courses = [13202] #scrape the course number
-
-    if args.courses == "all":
-        courses = canvas.get_courses()
-    else:
-        course_ids = map(int, args.courses.split(","))
-        courses = [canvas.get_course(course_id) for course_id in course_ids]
-
-    for course in courses:
-        course: Course = course
-        get_course_files(course)</code></pre>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mb-6">
-                        <h3 class="text-xl font-bold mb-2">Advent of Code Challenges</h3>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div>
-                                <h4 class="font-semibold">Day 1: Number Processing</h4>
-                                <button onclick="toggleCode('day1-number-processing', event)" class="code-button">Show Day 1 Code</button>
-                                <pre id="day1-number-processing" class="language-python"><code class="language-python">
-def bigboy_file(filename):
-    with open(filename, "r") as file:
-        content = file.read().replace('\n', '').replace(' ', '').strip()
-        
-        numbers = []
-        i = 0
-        while i + 5 <= len(content):
-            numbers.append(int(content[i:i+5]))
-            i += 5
-        
-        
-        first_list = numbers[::2]  
-        second_list = numbers[1::2]  
-        
-        return first_list, second_list
-
-
-first_list, second_list = bigboy_file("adventday1.txt")
-first_list.sort()
-second_list.sort()
-
-total_diff = []
-for i in range(min(len(first_list), len(second_list))):
-    summ = abs(first_list[i] - second_list[i])
-    total_diff.append(summ)
-
-true_sum = sum(total_diff)
-
-print("The true sum is " , true_sum)
-
-
-similar_num = []
-
-
-for j in range(len(first_list)):
-    for i in range(len(second_list)):
-        if first_list[j] == second_list[i]:
-            similar_num.append(first_list[j])
-
-
-
-similarSum = sum(similar_num)
-print("Similar number sum is " ,similarSum)
-                                </code></pre>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Day 3: Is it random text or a mult() function?</h4>
-                                <button onclick="toggleCode('day3-multiplication', event)" class="code-button">Show Day 3 Code</button>
-                                <pre id="day3-multiplication" class="language-python"><code class="language-python">
-import re
-
-def detect_and_compute_mul_from_file(file_name):
-    with open(file_name, 'r') as file:
-        text = file.read()
-
-    mul_pattern = r'mul\((\d+),\s*(\d+)\)'
-    #also had to look the syntax for filtering results up
-    mul_values = re.findall(mul_pattern, text)
-
-    results = []
-    for value in mul_values:
-        a, b = map(int, value)
-        result = a * b
-        results.append((a, b, result))
-
-    final_result = sum(result for _, _, result in results)
-    #I had to look this part up, I had no clue how to get all of the results together.
-    return results, final_result
-
-file_name = 'adventday3.txt'
-results, final_result = detect_and_compute_mul_from_file(file_name)
-print(f"Final result: {final_result}")</code></pre>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold">Day 4: XMAS Counter</h4>
-                                <button onclick="toggleCode('day4-xmas-counter', event)" class="code-button">Show Day 4 Code</button>
-                                <pre id="day4-xmas-counter" class="language-python"><code class="language-python">def count_xmas_occurrences(filename):
-counter = 0
-
-def find_xmas(grid, word="XMAS"):
-    rows = len(grid)
-    cols = len(grid[0])
-    word_len = len(word)
-    directions = [
-        (0, 1),
-        (0, -1),
-        (1, 0),
-        (-1, 0),
-        (1, 1),
-        (-1, -1),
-        (1, -1),
-        (-1, 1)
-    ]
-
-    count = 0
-
-    def check_direction(r, c, dr, dc):
-        for i in range(word_len):
-            nr, nc = r + i * dr, c + i * dc
-            if nr < 0 or nr >= rows or nc < 0 or nc >= cols or grid[nr][nc] != word[i]:
-                return False
-        return True
-
-    for r in range(rows):
-        for c in range(cols):
-            for dr, dc in directions:
-                if check_direction(r, c, dr, dc):
-                    count += 1
-
-    return count
-
-with open("adventday4.txt", "r") as file:
-    grid = [list(line.strip()) for line in file]
-
-xmas_count = find_xmas(grid)
-
-print(f"There are a total of {xmas_count} occurrences of 'XMAS'.")
-</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        <div class="container mx-auto max-w-4xl bg-white shadow-lg my-8 rounded-lg overflow-hidden page-1">
-            <div class="ml-8 mr-8">
-                <section class="mb-4">
-                    <h1 class="text-3xl align-center border-t-1 border-blue-500 font-bold pb-2 mb-3"><br><center>Personal information:</center></h1>
-                </section>
-                <section class="mb-4">
-                    <h2 class="text-xl font-semibold border-b-2 border-blue-500 pb-2 mb-3"><br>Contact Me</h2>
-                    <p class="text-gray-700">bilyeudrew8@gmail.com</p>
-                    <p class="text-gray-700">Centennial, CO 80016</p>
-                </section>
-
-                <section class="mb-4">
-                    <h2 class="text-xl font-semibold border-b-2 border-blue-500 pb-2 mb-3">Education</h2>
-                    <p class="font-bold">Regis Jesuit High School</p>
-                    <p class="text-gray-700">3.8 GPA</p>
-                    <p class="text-gray-700">AP Scholar with Distinction</p>
-                </section>
-
-                <section>
-                    <h2 class="text-xl font-semibold border-b-2 border-blue-500 pb-2 mb-3">Certifications</h2>
-                    <ul class="text-gray-700">
-                        <li>AED Certification</li>
-                        <li>Lifeguard Training</li>
-                        <li>CPR Certification</li>
-                        <li>First Aid Certification</li>
-                    </ul>
-                </section>
-
-                <section class="mb-4">
-                    <h2 class="text-xl font-semibold border-b-2 border-blue-500 pb-2 mb-3"><br>Notable Achievements</h2>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div>
-                            <h3 class="font-bold">Boy Scouts of America</h3>
-                            <ul class="text-gray-700 list-disc list-inside">
-                                <li>Eagle Scout Rank</li>
-                                <li>44 Merit Badges</li>
-                                <li>Senior Patrol Leader</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="font-bold">Robotics Team</h3>
-                            <ul class="text-gray-700 list-disc list-inside">
-                                <li>Second Place at State Competition</li>
-                                <li>Robot Design & Construction</li>
-                                <li>Drive Lead</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <div class="p-6 grid md:grid-cols-3 gap-6"></div>
-                    <div class="md:col-span-2">
-                        <section class="mb-6">
-                            <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Work Experience</h2>
-                            <div class="mb-4">
-                                <h3 class="font-bold text-lg">Lifeguard</h3>
-                                <p class="text-gray-600 font-bold">City of Aurora | June 2022 - Present</p>
-                                <p class="text-gray-600 font-bold">Front Range Recreation | June 2023 - Present</p>
-                                <ul class="list-disc list-inside text-gray-700">
-                                    <li>Responsible for the safety of all patrons</li>
-                                    <li>I have performed 3 rescues</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-lg">Volunteer</h3>
-                                <p class="text-gray-600 font-bold">Shalom Park | February 2013 - Present</p>
-                                <ul class="list-disc list-inside text-gray-700">
-                                    <li>Support the Elders, develop relationships, and boost morale</li>
-                                    <li>Assist with activities and work directly with the volunteer coordinators</li>
-                                </ul>
-                            </div>
-                        </section>
-                        </div>
-            </div>
-        </div>
+<body class="bg-gray-100">
+  <div class="container mx-auto max-w-4xl bg-white shadow-lg my-8 rounded-lg overflow-hidden">
+    <!-- Header -->
+    <div class="gradient-header text-white p-6">
+      <h1 class="text-4xl font-bold">Andrew Bilyeu</h1>
+      <p class="text-xl">Cybersecurity | Governance, Risk & Compliance | Software Development</p>
+      <p class="mt-2">bilyeudrew8@gmail.com | Centennial, CO | LinkedIn: linkedin.com/in/andrewbilyeu</p>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
-    
-    <script>
-        function toggleCode(codeId) {
-    const codeBlock = document.getElementById(codeId);
-    const button = event.target;
-    
-    if (codeBlock.style.display === 'block') {
-        codeBlock.style.display = 'none';
-        switch(codeId) {
-            case 'canvas-file-scraper':
-                button.textContent = 'Show Canvas File Scraper Code';
-                break;
-            case 'day1-number-processing':
-                button.textContent = 'Show Day 1 Code';
-                break;
-            case 'day3-multiplication':
-                button.textContent = 'Show Day 3 Code';
-                break;
-            case 'day4-xmas-counter':
-                button.textContent = 'Show Day 4 Code';
-                break;
-        }
-    } else {
-        codeBlock.style.display = 'block';
-        button.textContent = 'Hide Code';
-    }
-}
+    <!-- Experience -->
+    <section class="p-6">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Experience</h2>
 
-    </script>
+      <div class="mb-6">
+        <h3 class="text-xl font-bold">Cyber Governance, Risk, and Compliance Intern</h3>
+        <p class="text-gray-600 font-semibold">Lockheed Martin | Summer 2025</p>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>Spearheaded a <b>database migration</b> used in automated email communication, reducing runtime by <b>45% (45 min/run down to 20 min/run)</b>.</li>
+          <li>Prepared for the <b>ITGC Audit</b> by remediating compliance issues across hardware/software, boosting compliance rates by ~<b>30%</b> over a domain of ~20,000 employees.</li>
+          <li>Created an <b>automated vulnerability notification system</b>, cutting processing time by <b>58%</b> (4 hrs → 2.5 hrs).</li>
+          <li>Built an <b>automated IT Systems Inventory classifier</b>, improving efficiency by <b>20%</b> by cutting the amount of checks needed to integrate sources into a database by 1 per data source.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-bold">Lifeguard</h3>
+        <p class="text-gray-600 font-semibold">City of Aurora | June 2022 – Present</p>
+        <p class="text-gray-600 font-semibold">Front Range Recreation | June 2023 – Present</p>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>Ensured patron safety and successfully performed three rescues.</li>
+          <li>Maintained vigilance and emergency response readiness in high-pressure environments.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-bold">Volunteer</h3>
+        <p class="text-gray-600 font-semibold">Shalom Park | 2013 – Present</p>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>Supported elder residents through community activities, boosting morale and engagement.</li>
+          <li>Collaborated with coordinators to facilitate recreational programs.</li>
+        </ul>
+      </div>
+    </section>
     
+    <!-- Projects -->
+    <section class="p-6">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Selected Projects</h2>
+
+      <div class="mb-6">
+        <h3 class="font-bold">CSV Inventory Automation Suite</h3>
+        <p class="text-gray-700">Built Python tools to automate asset management and compliance workflows.</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li><b>compare_inventory.py</b> – Automated reconciliation between database and new inventory files, matching by IP/hostname and producing clean matched/unmatched reports.</li>
+          <li><b>split_csv.py</b> – Implemented rules-based categorization system that classified assets into categories with wildcard and conditional logic, generating categorized CSV outputs.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="font-bold">Canvas File Scraper</h3>
+        <p class="text-gray-700">Automated tool to download and organize Canvas course files. Built with Python and Canvas API to improve workflow efficiency.</p>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="font-bold">Advent of Code Challenges</h3>
+        <p class="text-gray-700">Solved algorithmic programming challenges in Python, focusing on parsing efficiency, modular design, and problem-solving under time constraints.</p>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="font-bold">Portfolio Website</h3>
+        <p class="text-gray-700">Personal site built with HTML/CSS to showcase projects, technical skills, and achievements in a responsive, recruiter-friendly layout.</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="p-6">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Education</h2>
+      <p class="font-bold">The Ohio State University</p>
+      <p class="text-gray-700">B.S. Computer Science & Engineering | Expected 2029</p>
+      <br>
+      <p class="font-bold">Regis Jesuit High School</p>
+      <p class="text-gray-700">GPA: 3.96 | AP Scholar with Distinction</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="p-6">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Technical Skills</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div>
+          <h3 class="font-bold">Programming</h3>
+          <ul class="text-gray-700">
+            <li>Python (3 yrs)</li>
+            <li>Java (2.5 yrs)</li>
+            <li>SQL/MySQL (1 yr)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold">Cybersecurity</h3>
+          <ul class="text-gray-700">
+            <li>ITGC & GRC Processes</li>
+            <li>Vulnerability Management</li>
+            <li>Automation & Compliance Tools</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold">Other Skills</h3>
+          <ul class="text-gray-700">
+            <li>Leadership & Team Management</li>
+            <li>Problem Solving</li>
+            <li>Community Engagement</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Certifications & Achievements -->
+    <section class="p-6">
+      <h2 class="text-2xl font-semibold border-b-2 border-blue-500 pb-2 mb-4">Certifications & Achievements</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="font-bold">Certifications</h3>
+          <ul class="text-gray-700">
+            <li>Lifeguard, CPR, AED, First Aid</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold">Leadership</h3>
+          <ul class="text-gray-700">
+            <li>Eagle Scout (44 Merit Badges)</li>
+            <li>Senior Patrol Leader, Boy Scouts of America</li>
+            <li>Robotics Team – State 2nd Place, Drive Lead</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
